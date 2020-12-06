@@ -34,4 +34,21 @@ ReviseRootView("Hello App") {
    CurrentContentView()
 }
 ```
-## Changing View <h2> 
+## Adding EnvironmentObject <h2>
+ 
+ ### Adding EnvironmentObject for the NavigationStack <h3>
+ ```swift
+ struct CurrentDemoView: View {
+    @EnvironmentObject var Navigation: NavigationStack
+    var body: some View {      
+    }
+}
+ ```
+ ### Adding EnvironmentObject without a NavigationStack <h3>
+ ```swift
+ struct CurrentDemoView: View {
+    @EnvironmentObject var Navigation: NavigateCurrentView
+    var body: some View {      
+    }
+}
+ ```
