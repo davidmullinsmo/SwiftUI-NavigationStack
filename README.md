@@ -34,3 +34,4 @@ ReviseRootView("Hello App") {
    CurrentContentView()
 }
 ```
+## Changing View <h2> 
