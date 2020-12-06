@@ -60,7 +60,7 @@ After we add the EnvironmentObject we can work with the framework. It is simple 
  {
    ContentView()
  }
- //While the NavigationStack as well it doesn't add the removing view to the ViewStack
+ //While the NavigationStack has ChangeCurrentView this functions does not add anything to the NavigationStack just changes the View
  Navigation.ChangeCurrentView("Demo View One") {
    ContentView()
 }
