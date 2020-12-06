@@ -6,7 +6,7 @@ If you want to use the Side Bar in your Application use the ReviseNavigationRoot
 * NavigationStack - This class has a NavigationStack
 * NavigateCurrentView - This class just let's you Navigate different view with keeping track on the rootView
 
-###Application with a Navigation Stack with a SideBar <h3>
+### Application with a Navigation Stack with a SideBar <h3>
 ```swift
  ReviseNavigationRootView {
     ContentView()
@@ -14,7 +14,7 @@ If you want to use the Side Bar in your Application use the ReviseNavigationRoot
     SideBarDemo()
 }.frame(minWidth: 550, idealWidth: 650, maxWidth: .infinity)    
 ```
-###Application without a Navigation Stack with a SideBar
+### Application without a Navigation Stack with a SideBar <h3>
 ```swift 
 ReviseNavigationRootView("Hello World", navigationStack: false) {
     CurrentContentView()
@@ -22,13 +22,13 @@ ReviseNavigationRootView("Hello World", navigationStack: false) {
       CurrentSideBar()
  }.frame(minWidth: 550, idealWidth: 650, maxWidth: .infinity)
 ```
-###Application with a Navigation Stack without SideBar
+### Application with a Navigation Stack without SideBar <h3>
 ```swift
 ReviseRootView("Hello App") {
   ContentView()
 }
 ```
-###Application with a Navigation Stack without SideBar
+### Application with a Navigation Stack without SideBar <h3>
 ```swift
  ReviseRootView("Hello App", navigationStack: false) {
    CurrentContentView()
