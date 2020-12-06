@@ -60,10 +60,23 @@ After we add the EnvironmentObject we can work with the framework. It is simple 
  {
    ContentView()
  }
- //While the NavigationStack has ChangeCurrentView this functions does not add anything to the NavigationStack just changes the View
+ //Grabs the View before current View removes from the Stack & changes to that View
+ Navigation.PopView()
+ //While the NavigationStack has ChangeCurrentView this functions does not add anything to the NavigationStack 
+ //just changes the Current View
  Navigation.ChangeCurrentView("Demo View One") {
    ContentView()
 }
+ //Goes to the RootView without clearing the NavigationStack
+ Navigation.HomeView()
+ //Clears the NavigationStack and goes to the RootView
+ Navigation.RootView()
+ 
+ //Returns the current Count of the NavigationStack
+ Navigation.ViewStackCount()
+ //Removes all View from the NavigationStack
+ Navigation.RemoveAllView()
+ 
  ```
  #### Without NavigationStack 
  ```swift
@@ -71,4 +84,7 @@ After we add the EnvironmentObject we can work with the framework. It is simple 
 Navigation.ChangeCurrentView("Demo View One") {
    ContentView()
 }
+//Goes to the RootView
+Navigation.HomeView()
  ```
+We also have working with the settings Panel and a New Window. All the Class are about the same with each of major class. For the Settings classes are prefixed with Settings and each view starts with ReviseSettings. The Window class are prefixed with Window or ReviseWindow.
