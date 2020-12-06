@@ -4,6 +4,9 @@ This is a custom NavigationStack working with MacOS and SwiftUI. I didn't like t
 ## For the Main Application we use to Navigation Stack
 If you want to use the Side Bar in your Application use the ReviseNavigationRootView
 * NavigationStack - This class has a NavigationStack
+* NavigateCurrentView - This class just let's you Navigate different view with keeping track on the rootView
+
+###Application with a Navigation Stack with a SideBar
 ```swift
  ReviseNavigationRootView {
     ContentView()
@@ -11,8 +14,7 @@ If you want to use the Side Bar in your Application use the ReviseNavigationRoot
     SideBarDemo()
 }.frame(minWidth: 550, idealWidth: 650, maxWidth: .infinity)    
 ```
-* NavigateCurrentView - This class just let's you Navigate different view with keeping track on the rootView
-
+###Application without a Navigation Stack with a SideBar
 ```swift 
 ReviseNavigationRootView("Hello World", navigationStack: false) {
     CurrentContentView()
@@ -20,4 +22,15 @@ ReviseNavigationRootView("Hello World", navigationStack: false) {
       CurrentSideBar()
  }.frame(minWidth: 550, idealWidth: 650, maxWidth: .infinity)
 ```
-If you don't want to use the Side Bar in your Application you can use ReviseRootView. 
+###Application with a Navigation Stack without SideBar
+```swift
+ReviseRootView("Hello App") {
+  ContentView()
+}
+```
+###Application with a Navigation Stack without SideBar
+```swift
+ ReviseRootView("Hello App", navigationStack: false) {
+   CurrentContentView()
+}
+```
