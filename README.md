@@ -52,3 +52,20 @@ ReviseRootView("Hello App") {
     }
 }
  ```
+After we add the EnvironmentObject we can work with the framework. It is simple and easy to use! Let's Start off with Basic Navigation 
+ #### With NavigationStack
+```swift
+ //The string sets the Navigation Title
+ Navigation.PushView("Hello World")
+ {
+   ContentView()
+ }
+ 
+ ```
+ #### Without NavigationStack 
+ ```swift
+ //The string sets the Navigation Title
+Navigation.ChangeCurrentView("Demo View One") {
+   ContentView()
+}
+ ```
