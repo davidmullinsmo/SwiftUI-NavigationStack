@@ -1,0 +1,11 @@
+framework module ReviseNavigation {
+  umbrella header "ReviseNavigation.h"
+
+  export *
+  module * { export * }
+}
+
+module ReviseNavigation.Swift {
+    header "ReviseNavigation-Swift.h"
+    requires objc
+}
