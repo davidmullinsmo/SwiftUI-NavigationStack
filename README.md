@@ -1,7 +1,7 @@
 # SwiftUI-NavigationStack
 This is a Custom Navigation Stack for SwiftUI MacOS 
 
-'''swift
+''' swift
  ReviseNavigationRootView("Hello World", navigationStack: false) {
                 CurrentContentView()
             } sideBar: {
