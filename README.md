@@ -34,7 +34,7 @@ ReviseRootView("Hello App") {
    CurrentContentView()
 }
 ```
-## Adding EnvironmentObject <h2>
+## Adding EnvironmentObject 
  
  ### Adding EnvironmentObject for the NavigationStack <h3>
  ```swift
